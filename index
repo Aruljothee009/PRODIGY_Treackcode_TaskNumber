@@ -1,1 +1,42 @@
+/* Styles for the navigation menu */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Styles for the navigation menu when scrolled */
+header.scrolled {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Styles for the navigation menu when a menu item is hovered over */
+nav a:hover {
+  color: #ccc;
+}
